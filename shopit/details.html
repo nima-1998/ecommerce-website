@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <title>shopit</title>
+</head>
+<body>
+    <!-- navbar -->
+    <section class="navbar nav-bg">
+        <div class="container">
+            <div class="navmenu row">
+                <div class="nav-left row">
+                    <div class="logo">
+                        <a href="home.html">                        
+                            <img src="/assets/images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav row">
+                        <li><a class="hov" href="home.html">Home</a></li>
+                        <li><a class="hov" href="#">Shop</a></li>
+                        <li><a class="hov" href="#">Categories</a></li>
+                        <li><a class="hov" href="#">Sign In</a></li>
+                    </ul>
+                </div>
+                <div class="right-nav row">
+                    <img src="/assets/images/search.svg" alt="icon" title="search">
+                    <img id="toggle" src="/assets/images/cart.svg" alt="icon" title="cart">
+                    <img src="/assets/images/profile.svg" alt="icon" title="profile">
+                </div>
+            </div>
+            <div class="pop-up col" id="popup">
+                <div class="head row">
+                    <div class="pop-title">SHOPPING CART</div>
+                    <div class="close-icon">
+                        <img src="/assets/images/close.svg" alt="close icon">
+                    </div>
+                </div>
+                <div class="middle row">
+                    <div class="prod-img">
+                        <img src="/assets/images/cart-img.png" alt="product image">
+                    </div>
+                    <div class="cart-details col">
+                        <div class="prod-title">Gray Jumpsuit In Silk</div>
+                        <div class="price">$250</div>
+                        <div class="amount row">
+                            <img src="/assets/images/amount.svg" alt="quantity">
+                            <img id="delete" src="/assets/images/bin.svg" alt="bin">
+                        </div>
+                    </div> 
+                </div>       
+                <hr>
+                <div class="total row">
+                    <div class="total-text prod-title">Sub Total:</div>
+                    <div class="price total-price">$250</div>
+                </div>
+                <div class="cart-buttons col">
+                    <div class="button-container">
+                        <a href="#" class="button b-two">VIEW CART</a>
+                    </div> 
+                    <div class="button-container">
+                        <a href="#" class="button b-two">CHECKOUT</a>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product view -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-container row">
+                <div class="product-img col">
+                    <img src="/assets/images/detail-main.png" alt="product image">
+                    <!-- slider -->
+                    <div class="wrapper">
+                        <div class="prod-slider row">
+                            <div>
+                                <img src="/assets/images/variety.svg" alt="product image">
+                            </div>
+                            <div>
+                                <img src="/assets/images/v2.svg" alt="product image">
+                            </div>
+                            <div>
+                                <img src="/assets/images/v3.svg" alt="product image">
+                            </div>
+                            <div>
+                                <img src="/assets/images/v4.svg" alt="product image">
+                            </div>
+                            <div>
+                                <img src="/assets/images/v2.svg" alt="product image">
+                            </div>
+                            <div>
+                                <img src="/assets/images/v3.svg" alt="product image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-feat col">
+                    <div class="tag body-text">Summer</div>
+                    <div class="title product-text">Pink Blazer With Ribbon</div>
+                    <div class="price-sec row">
+                        <div class="price">$120</div>
+                        <div class="heart-logo" >
+                            <img class="heart" id="heartIcon" src="/assets/images/heart.svg" alt="heart logo">
+                        </div>
+                    </div>
+                    <div class="color-type">
+                        <img src="/assets/images/color.svg" alt="color">
+                    </div>
+                    <div class="body-text just">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+                    <div class="size-type">
+                        <img src="/assets/images/size.svg" alt="size">
+                    </div>
+                    <div class="product-button row">
+                        <div class="button-container">
+                            <a href="#" class="button">BUY NOW</a>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="button">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rating & reviews -->
+    <section class="review">
+    <div class="container">
+        <div class="review-container col">
+            <div class="review-title product-text">Rating & Reviews</div>
+            <div class="rating-container row">
+                <div class="site-rating col">
+                    <div class="product-text product-rating">3.5</div>
+                    <div class="star-icon">
+                        <img src="/assets/images/star.svg" alt="rating">
+                    </div>
+                    <div class="product-text total-rating">(5 ratings)</div>
+                </div>
+                <div class="rating-type">
+                    <img src="/assets/images/rating.svg" alt="rating">
+                </div>
+            </div>
+            <hr>
+            <div class="customer col">
+                <div class="customer-title">Customer Review</div>
+                <div class="customer-review col">
+                    <div class="customer-info row">
+                        <div class="customer-profile row">
+                            <img src="/assets/images/customer.svg" alt="profile">
+                            <div class="customer-name">John Doe</div>
+                        </div>
+                        <img class="star" src="/assets/images/star.svg" alt="review">
+                    </div>
+                    <div class="date body-text">March 02, 2024</div>
+                    <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--like  -->
+    <section class="like">
+        <div class="container">
+            <div class="like-container col">
+                <h2>You May Also Like</h2>
+                <div class="prod-row row">
+                    <div class="prod-card col" onclick="window.location.href='details.html'">
+                        <img src="/assets/images/1.png" alt="product">
+                        <div class="prod-info col">
+                            <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                            <div class="price">$200</div>
+                            <div class="rating">
+                                <img src="/assets/images/star.svg" alt="rating">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-card col" onclick="window.location.href='details.html'">
+                        <img src="/assets/images/2.png" alt="product">
+                        <div class="prod-info col">
+                            <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                            <div class="price">$200</div>
+                            <div class="rating">
+                                <img src="/assets/images/star.svg" alt="rating">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-card col" onclick="window.location.href='details.html'">
+                        <img src="/assets/images/3.png" alt="product">
+                        <div class="prod-info col">
+                            <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                            <div class="price">$200</div>
+                            <div class="rating">
+                                <img src="/assets/images/star.svg" alt="rating">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-card col" onclick="window.location.href='details.html'">
+                        <img src="/assets/images/4.png" alt="product">
+                        <div class="prod-info col">
+                            <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                            <div class="price">$200</div>
+                            <div class="rating">
+                                <img src="/assets/images/star.svg" alt="rating">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- offers -->
+    <section class="offers">
+        <div class="offer-container">
+            <div class="container">
+                <div class="content row">
+                    <div class="offer-card col">
+                        <img src="/assets/images/v-1.svg" alt="icon">
+                        <div class="offer-title">WorldWide Shipping</div>
+                        <div class="body-text offer-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        </div>
+                    </div>
+                    <div class="offer-card col">
+                        <img src="/assets/images/v-2.svg" alt="icon">
+                        <div class="offer-title">Big Discounts</div>
+                        <div class="body-text offer-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        </div>
+                    </div>
+                    <div class="offer-card col">
+                        <img src="/assets/images/v-3.svg" alt="icon">
+                        <div class="offer-title">Secure Payments</div>
+                        <div class="body-text offer-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="container">
+                <div class="content-wrapper row">
+                    <div class="logo-container">
+                        <a href="home.html">
+                            <img src="/assets/images/logo2.svg" alt="logo">
+                        </a>
+                        <div class="body-text">dolor sit amet, consectetur adipiscing elit</div>
+                    </div>
+                    <div class="nav-links col">
+                        <div class="sub-title">Quick Links</div>
+                        <div class="links-item">
+                            <ul class="col">
+                                <li class="body-text"><a class="hov" href="home.html">Home</a></li>
+                                <li class="body-text"><a class="hov" href="#">Shop</a></li>
+                                <li class="body-text"><a class="hov" href="#">Categories</a></li>
+                                <li class="body-text"><a class="hov" href="#">Sign In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pay-method col">
+                        <div class="sub-title">Pay With</div>
+                        <div class="pay-img">
+                            <img src="/assets/images/pay.svg" alt="payment">
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="sub-title">Contact Us</div>
+                        <div class="location body-text">123 Fifth Avenue, New York, NY 10160</div>
+                        <div class="mail body-text">contact@gmail.com</div>
+                        <div class="num body-text">981010101</div>
+                        <div class="socials row">
+                            <a href="https://www.facebook.com/" target="_blank" title="facebook"><img src="/assets/images/fb.svg" alt="social media"></a>
+                            <a href="https://www.facebook.com/" target="_blank" title="instagram"><img src="/assets/images/insta.svg" alt="social media"></a>
+                            <a href="https://www.facebook.com/" target="_blank" title="twitter"><img src="/assets/images/twitter.svg" alt="social media"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright body-text">Copyright © 2024 shopit Store </div>
+            </div>
+        </div>
+    </section> 
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.prod-slider').slick({
+            slidesToShow: 4,
+            dots:false,
+            // centerMode: true,
+            // prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-less-than"></i></button>',
+            // nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-greater-than"></i></button>',
+        });
+        });
+    </script>
+   
+</body>
+</html>

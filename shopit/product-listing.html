@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <title>shopit</title>
+</head>
+<body>
+    <!-- navbar -->
+    <section class="navbar nav-bg">
+        <div class="container">
+            <div class="navmenu row">
+                <div class="nav-left row">
+                    <div class="logo">
+                        <a href="home.html">                        
+                            <img src="/assets/images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav row">
+                        <li><a class="hov" href="home.html">Home</a></li>
+                        <li><a class="hov" href="#">Shop</a></li>
+                        <li><a class="hov" href="#">Categories</a></li>
+                        <li><a class="hov" href="#">Sign In</a></li>
+                    </ul>
+                </div>
+                <div class="right-nav row">
+                    <img src="/assets/images/search.svg" alt="icon">
+                    <img id="toggle" src="/assets/images/cart.svg" alt="icon">
+                    <img src="/assets/images/profile.svg" alt="icon">
+                </div>
+            </div>
+            <div class="pop-up col" id="popup">
+                <div class="head row">
+                    <div class="pop-title">SHOPPING CART</div>
+                    <div class="close-icon">
+                        <img src="/assets/images/close.svg" alt="close icon">
+                    </div>
+                </div>
+                <div class="middle row">
+                    <div class="prod-img">
+                        <img src="/assets/images/cart-img.png" alt="product image">
+                    </div>
+                    <div class="cart-details col">
+                        <div class="prod-title">Gray Jumpsuit In Silk</div>
+                        <div class="price">$250</div>
+                        <div class="amount row">
+                            <img src="/assets/images/amount.svg" alt="quantity">
+                            <img id="delete" src="/assets/images/bin.svg" alt="bin">
+                        </div>
+                    </div> 
+                </div>       
+                <hr>
+                <div class="total row">
+                    <div class="total-text prod-title">Sub Total:</div>
+                    <div class="price total-price">$250</div>
+                </div>
+                <div class="cart-buttons col">
+                    <div class="button-container">
+                        <a href="cart.html" class="button b-two">VIEW CART</a>
+                    </div> 
+                    <div class="button-container">
+                        <a href="checkout.html" class="button b-two">CHECKOUT</a>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sale-banner">
+        <div>
+            <img src="/assets/images/sale-banner.svg" alt="">
+        </div>
+    </section>
+
+    <!-- product list -->
+    <section class="list-container">
+        <div class="container">
+            <div class="list-wrapper row">
+                <div class="list-filter col">
+                    <div class="filter-title row">
+                        <img src="/assets/images/filter.svg" alt="filter icon">
+                        <div class="sub-text">Filter</div>
+                    </div>
+                    <hr>
+                    <div class="list-cat col">
+                        <div class="sub-text">Categories</div>
+                        <ul class="col">
+                            <li class="body-text">Summer</li>
+                            <li class="body-text">Winter</li>
+                            <li class="body-text">Accessories</li>
+                        </ul>
+                    </div>
+                    <div class="list-price col">
+                        <div class="sub-text">FILTER BY PRICE</div>
+                        <ul class="col">
+                            <li class="body-text">
+                                <label class="row">
+                                    <input type="radio" name="price" value="one">
+                                    <span class="custom"></span>$50 - $100
+                                </label>
+                            </li>
+                            <li class="body-text">
+                                <label class="row">
+                                    <input type="radio" name="price" value="two">
+                                    <span class="custom"></span>$100 - $200
+                                </label>
+                            </li>
+                            <li class="body-text">
+                                <label class="row">
+                                    <input type="radio" name="price" value="three">
+                                    <span class="custom"></span>$200 - $300
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-color col">
+                        <div class="sub-text">FILTER BY COLOR</div>
+                        <div>
+                            <img src="/assets/images/color.svg" alt="color" title="color">
+                        </div>
+                    </div>
+                    <div class="list-size col">
+                        <div class="sub-text">FILTER BY SIZE</div>
+                        <div>
+                            <img src="/assets/images/size.svg" alt="size" title="size">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="list-line">
+
+                <div class="product-list-wrapper col">
+                    <h3>Product List</h3>
+                    <div class="prod-row prod row">
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/1.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/2.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/3.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="prod-row prod row">
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/1.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/2.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/3.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="prod-row prod row">
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/1.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/2.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col" onclick="window.location.href='details.html'">
+                            <img src="/assets/images/3.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <!-- hidden -->
+                    <div class="prod-row prod row hide">
+                        <div class="prod-card list-card col">
+                            <img src="/assets/images/1.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col">
+                            <img src="/assets/images/2.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                        <div class="prod-card list-card col">
+                            <img src="/assets/images/3.png" alt="product">
+                            <div class="prod-info col">
+                                <div class="prod-name">GRAY SILK JUMPSUIT DRESS</div>
+                                <div class="price">$200</div>
+                                <div class="rating">
+                                    <img src="/assets/images/star.svg" alt="rating">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="cart.html" class="button">ADD TO CART</a>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div id="view-more-btn" class="body-text view">
+                        View More
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="container">
+                <div class="content-wrapper row">
+                    <div class="logo-container">
+                        <a href="home.html">
+                            <img src="/assets/images/logo2.svg" alt="logo">
+                        </a>
+                        <div class="body-text">dolor sit amet, consectetur adipiscing elit</div>
+                    </div>
+                    <div class="nav-links col">
+                        <div class="sub-title">Quick Links</div>
+                        <div class="links-item">
+                            <ul class="col">
+                                <li class="body-text"><a class="hov" href="home.html">Home</a></li>
+                                <li class="body-text"><a class="hov" href="#">Shop</a></li>
+                                <li class="body-text"><a class="hov" href="#">Categories</a></li>
+                                <li class="body-text"><a class="hov" href="#">Sign In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pay-method col">
+                        <div class="sub-title">Pay With</div>
+                        <div class="pay-img">
+                            <img src="/assets/images/pay.svg" alt="payment">
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="sub-title">Contact Us</div>
+                        <div class="location body-text">123 Fifth Avenue, New York, NY 10160</div>
+                        <div class="mail body-text">contact@gmail.com</div>
+                        <div class="num body-text">981010101</div>
+                        <div class="socials row">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="/assets/images/fb.svg"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="/assets/images/insta.svg"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="/assets/images/twitter.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright body-text">Copyright © 2024 shopit Store </div>
+            </div>
+        </div>
+    </section> 
+
+    <script src="script.js"></script>
+</body>
+</html>
